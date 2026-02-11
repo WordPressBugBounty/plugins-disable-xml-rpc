@@ -2,7 +2,7 @@
 Contributors: solvethenet, philerb
 Tags: xmlrpc
 Requires at least: 3.5
-Tested up to: 6.3
+Tested up to: 6.9
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -37,7 +37,7 @@ There are a few easy methods for checking if XML-RPC is off:
 
 1. Try using an XML-RPC WordPress client, like the official WordPress mobile apps. The WordPress mobile app should tell you that "XML-RPC services are disabled on this site" if the plugin is activated.
 1. Use the curl command to send an XML-RPC request to your site. If the response contains "XML-RPC services are disabled on this site" then the plugin is working properly and WordPress will not send data back to XML-RPC requests.
-1. Try the XML-RPC Validator, written by Danilo Ercoli of the Automattic Mobile Team - the tool is available at [https://xmlrpc-check.hostpress.me/](https://xmlrpc-check.hostpress.me/). Information and source code for the tool are available on GitHub at [https://github.com/daniloercoli/WordPress-XML-RPC-Validator](https://github.com/daniloercoli/WordPress-XML-RPC-Validator). Keep in mind that you want the validator to fail and tell you that XML-RPC services are disabled.
+1. Try the XML-RPC Validation Service for WordPress - the tool is available at [https://xmlrpc.blog/](https://xmlrpc.blog/). Keep in mind that you want the validator to fail and tell you that XML-RPC services are disabled.
 
 See the screenshots for examples of what these tools will return when the plugin is enabled.
 
@@ -49,7 +49,7 @@ If the plugin is activated, but XML-RPC appears to still be working ... OR ... t
 
 1. An example of the error that the WordPress mobile app will return when this plugin is enabled. This is expected and indicates that the plugin is working as intended.
 2. An example of a curl command attempting to request data via XML-RPC calls to the site when the plugin is enabled. The error "XML-RPC services are disabled on this site" is expected and indicates that the plugin is working as intended.
-3. An example of Danilo Ercoli's XML-RPC validator run against the site when the plugin is enabled. The error "Method not allowed" is expected and indicates that the plugin is working as intended.
+3. An example of the XML-RPC validator run against the site when the plugin is enabled. The error "Method not allowed" is expected and indicates that the plugin is working as intended.
 
 == Changelog ==
 
